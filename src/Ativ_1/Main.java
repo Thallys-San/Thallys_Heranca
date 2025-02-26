@@ -10,7 +10,6 @@ public class Main {
         ingressoNormal.imprimeValor();
 
         Vip ingressoVip = new Vip(15, 10);
-        ingressoVip.setIngressoVip(20);
         ingressoVip.imprimeValor();
     }
 }
