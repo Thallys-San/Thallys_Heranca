@@ -3,7 +3,6 @@ package Ativ_1;
 public class Ingresso {
     private double valor;
 
-
     public Ingresso(){}
 
     public Ingresso(double valor) {
@@ -11,10 +10,9 @@ public class Ingresso {
     }
 
     public void imprimeValor(){
-        System.out.println("--------------------Informações do Ingresso---------------------");
-        System.out.println("Valor: "+getValor());
+        System.out.println("-------------------- Informações do Ingresso --------------------");
+        System.out.printf("Valor: R$ %.2f%n", getValor());
     }
-
 
     public double getValor() {
         return valor;
