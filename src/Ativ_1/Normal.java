@@ -3,22 +3,20 @@ package Ativ_1;
 public class Normal extends Ingresso {
     private double ingressoNormal;
 
-    public Normal(){super();}
+    public Normal(double valor) {
+        super(valor);
+    }
 
-    public Normal(double valor, double ingressoNormal) {
+    public Normal(double valor,double ingressoNormal) {
         super(valor);
         this.ingressoNormal = ingressoNormal;
     }
 
     @Override
     public void imprimeValor() {
-        super.imprimeValor();
-        System.out.println("Valor: "+getIngressoNormal());
-    }
-
-    public String ingressoNormal(){
-        System.out.println("Ingresso Normal");
-        return "";
+        System.out.println("-------------------- Informações do Ingresso --------------------");
+        System.out.println("Tipo: Ingresso Normal");
+        System.out.printf("Valor: R$ %.2f%n", getValor());
     }
 
     public double getIngressoNormal() {
@@ -26,7 +24,7 @@ public class Normal extends Ingresso {
     }
 
     public void setIngressoNormal(double ingressoNormal) {
-        this.ingressoNormal = ingressoNormal;
+        setValor(ingressoNormal);
     }
 
 
